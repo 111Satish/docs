@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Render9",
   "logo": {
-    "dark": "/logo/Banner-4.svg",
-    "light": "/logo/Banner-4.svg"
+    "dark": "/logo/Banner-4.png",
+    "light": "/logo/Banner-4.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
