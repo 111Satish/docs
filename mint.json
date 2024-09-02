@@ -62,7 +62,7 @@
       "group": "Whatsapp API setup",
       "pages": [
         "WhatsAppBusinessPlatform",
-        "quickstart",
+        "CreateRender9OTPBusiness",
         "development"
       ]
     },
