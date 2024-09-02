@@ -1,52 +1,98 @@
 ---
-title: WhatsApp Business Platform
-description: 'Understand how the whatsapp business platform works and what can you use to build your own application via the API products whatsapp offers'
+title: 'Create a Render9 OTP Business App'
+description: 'You need to create a application in your Meta Developer Account in order to get access to WhatsApp Business API Products.'
 ---
-Whatsapp Business Platform offers majorly three API products to enable developers to build their own applications. These API products are:
 
-<h6>-- WhatsApp Business Account Management API </h6>
-<h6>-- WhatsApp On-Premises API </h6>
--- WhatApp Cloud API 
+<Info>
+  **Prerequisite** You should have installed Node.js (version 18.10.0 or
+  higher).
+</Info>
 
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+Step 1. Install Mintlify on your OS:
 
-## WhatsApp Business Account Management API
+<CodeGroup>
 
-<Card
-    icon="link"
-    href="#"
-  >
-You can read the official WhatsApp Business Management API documentation here.
-</Card>
-This API offers a suite of API endpoints which help you manage the business account, manage the business account settings, manage phone numbers and message templates. As of now, the Wapi.go SDK do not supports this API, but we are working on it and will soon release the support for this API.
+```bash npm
+npm i -g mintlify
+```
 
-## WhatsApp On-Premises API
+```bash yarn
+yarn global add mintlify
+```
 
-<Card
-    icon="link"
-    href="#"
-  >
-WhatsApp On-Premises API
-You can read the official WhatsApp On-Premises documentation here.
-</Card>
+</CodeGroup>
 
-On-Premises API was a legacy API offered by WhatsApp which requires self-hosting by the users, but it will soon be deprecated and hence users are advised to moved to new WhatsApp Cloud API. You can read the official sunsetting docs of On-Premises API here. Also, read the offifical on-prem API to Cloud API migration guide here.
+Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
 
-## WhatsApp Cloud API
-<Card
-    icon="link"
-    href="#"
-  >
-You can read the official WhatsApp Cloud API documentation here.
-</Card>
+```bash
+mintlify dev
+```
 
-This is a newly introduced API by WhatsApp which is cloud hosted and managed by WhatsApp itself. This API offers a suite of API endpoints which help you send messages, webhooks for incoming messages notification, send media messages, send interactive messages and much more.
+The documentation website is now available at `http://localhost:3000`.
 
-And this is what Wapi.go SDK majorly focusses on right now, to help developers build their own applications using this API. Wapi.go provides a smart layer of abstraction around this API, which helps developer to build application easily. Developers can easily build chat bots or integrate the SDK in their exisiting appplication using the robust infrastructure for sending and event listening for messages.
+### Custom Ports
 
+Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
 
+```bash
+mintlify dev --port 3333
+```
 
+You will see an error like this if you try to run Mintlify in a port that's already taken:
+
+```md
+Error: listen EADDRINUSE: address already in use :::3000
+```
+
+## Mintlify Versions
+
+Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
+
+<CodeGroup>
+
+```bash npm
+npm i -g mintlify@latest
+```
+
+```bash yarn
+yarn global upgrade mintlify
+```
+
+</CodeGroup>
+
+## Deployment
+
+<Tip>
+  Unlimited editors available under the [Startup
+  Plan](https://mintlify.com/pricing)
+</Tip>
+
+You should see the following if the deploy successfully went through:
+
+<Frame>
+  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Troubleshooting
+
+Here's how to solve some common problems when working with the CLI.
+
+<AccordionGroup>
+  <Accordion title="Mintlify is not loading">
+    Update to Node v18. Run `mintlify install` and try again.
+  </Accordion>
+  <Accordion title="No such file or directory on Windows">
+Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
+folder. Then Open the Git Bash in this location and run `git clone
+https://github.com/mintlify/mint.git`.
+
+Repeat step 3.
+
+  </Accordion>
+  <Accordion title="Getting an unknown error">
+    Try navigating to the root of your device and delete the ~/.mintlify folder.
+    Then run `mintlify dev` again.
+  </Accordion>
+</AccordionGroup>
+
+Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
