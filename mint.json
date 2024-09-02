@@ -57,6 +57,15 @@
         "development"
       ]
     },
+
+     {
+      "group": "Whatsapp API setup",
+      "pages": [
+        "WhatsAppBusinessPlatform",
+        "quickstart",
+        "development"
+      ]
+    },
     {
       "group": "Essentials",
       "pages": [
