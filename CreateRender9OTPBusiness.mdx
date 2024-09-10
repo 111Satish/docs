@@ -6,102 +6,107 @@ description: 'You need to create a application in your Meta Developer Account in
 Create your account on Render9, if you do not have one yet.
 </Info>
 
-
-
-<Accordion icon="#" title="Clone your docs locally">
+<Accordion icon="#" title="Visit Meta Development Dashboard Apps Section">
 <img
   className="hidden dark:block"
   src="/images/1.png"
   alt="Hero Dark"
-/>
-    
-  </Accordion>
+/> 
+</Accordion>
 
-Step 1. Install Mintlify on your OS:
+<Accordion icon="#" title="Create a New App">
+<img
+  className="hidden dark:block"
+  src="/images/2.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-<CodeGroup>
+<Accordion icon="#" title="For WhatsApp Business App, select others here.">
+<img
+  className="hidden dark:block"
+  src="/images/3.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-```bash npm
-npm i -g mintlify
-```
+<Accordion icon="#" title="Select Business">
+<img
+  className="hidden dark:block"
+  src="/images/4.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-```bash yarn
-yarn global add mintlify
-```
+<Accordion icon="#" title="Fill App Details">
+<img
+  className="hidden dark:block"
+  src="/images/5.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-</CodeGroup>
+<Accordion icon="#" title="Add WhatsApp Product to the Application Created">
+<img
+  className="hidden dark:block"
+  src="/images/6.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
+<Accordion icon="#" title="Get your Temporary API key, Test Phone Number, Text Phone Number Id and Whatsapp Business Account Id">
+<img
+  className="hidden dark:block"
+  src="/images/7.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-```bash
-mintlify dev
-```
+<Accordion icon="#" title="Clone your docs locally">
+<img
+  className="hidden dark:block"
+  src="/images/8.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-The documentation website is now available at `http://localhost:3000`.
+<Accordion icon="#" title="Clone your docs locally">
+<img
+  className="hidden dark:block"
+  src="/images/9.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-### Custom Ports
+<Accordion icon="#" title="Clone your docs locally">
+<img
+  className="hidden dark:block"
+  src="/images/10.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
+<Accordion icon="#" title="Clone your docs locally">
+<img
+  className="hidden dark:block"
+  src="/images/11.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-```bash
-mintlify dev --port 3333
-```
+<Accordion icon="#" title="Clone your docs locally">
+<img
+  className="hidden dark:block"
+  src="/images/12.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
+<Accordion icon="#" title="Clone your docs locally">
+<img
+  className="hidden dark:block"
+  src="/images/13.png"
+  alt="Hero Dark"
+/> 
+</Accordion>
 
-You will see an error like this if you try to run Mintlify in a port that's already taken:
 
-```md
-Error: listen EADDRINUSE: address already in use :::3000
-```
-
-## Mintlify Versions
-
-Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Startup
-  Plan](https://mintlify.com/pricing)
-</Tip>
-
-You should see the following if the deploy successfully went through:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Troubleshooting
-
-Here's how to solve some common problems when working with the CLI.
-
-<AccordionGroup>
-  <Accordion title="Mintlify is not loading">
-    Update to Node v18. Run `mintlify install` and try again.
-  </Accordion>
-  <Accordion title="No such file or directory on Windows">
-Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
-folder. Then Open the Git Bash in this location and run `git clone
-https://github.com/mintlify/mint.git`.
-
-Repeat step 3.
-
-  </Accordion>
-  <Accordion title="Getting an unknown error">
-    Try navigating to the root of your device and delete the ~/.mintlify folder.
-    Then run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
