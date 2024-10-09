@@ -6,30 +6,57 @@ description: 'Learn how to send messages using the Render9 SDK'
 
 <h5>Send a message</h5>
 <p> You can send a message to a user using the send method available on the client class message manager.</p>
-<Accordion icon="node.js" title="Visit Meta Development Dashboard Apps Section">
-<img
-  className="hidden dark:block"
-  src='/images/1.svg'
-  alt="Hero Dark"
-/> 
+<Accordion icon="node" title="Node js">
+<Info>
+  **Prerequisite** You should have installed Node.js (version 18.10.0 or
+  higher).
+</Info>
+
+Step 1. Install Render9 on your OS:
+
+<CodeGroup>
+
+```bash npm
+npm install render9
+```
+
+```bash yarn
+yarn add render9
+```
+
+</CodeGroup>
+
+Step 2. Add RENDER9_API_KEY to environment variable:
+
+```bash
+RENDER9_API_KEY
+```
+
+Step 3. import  sendOTP from render9:
+
+```bash
+import { sendOTP } from 'render9'
+```
+
+Step 4. Use sendOTP method to send otp :
+
+```bash
+sendOTP({ phoneNumber: <PHONE_NUMBER>, otp: <OTP> ,countryCode:<COUNTRY_CODE> , apiKey:<RENDER9_API_KEY> })
+```
+
 </Accordion>
 
-<h6>Node js</h6>
+<Accordion icon="python" title="Python">
 <Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
+  **Prerequisite** You should have installed Python.
 </Info>
 
 Step 1. Install Render9 on your OS:
 
 <CodeGroup>
 
-```bash npm
-npm install render9
-```
-
-```bash yarn
-yarn add render9
+```bash pip
+pip install render9
 ```
 
 </CodeGroup>
@@ -40,92 +67,34 @@ Step 2. Add RENDER9_API_KEY to environment variable:
 RENDER9_API_KEY
 ```
 
-Step 3. import  sendOTP from render9:
 
-```bash
-import { sendOTP } from 'render9'
-```
-
-Step 4. Use sendOTP method to send otp :
+Step 3. Use sendOTP method to send otp :
 
 ```bash
 sendOTP({ phoneNumber: <PHONE_NUMBER>, otp: <OTP> ,countryCode:<COUNTRY_CODE> , apiKey:<RENDER9_API_KEY> })
 ```
 
+</Accordion>
 
-Node js
+<Accordion icon="curl" title="CURL">
 <Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
+  **Prerequisite** You should have installed Curl.
 </Info>
 
-Step 1. Install Render9 on your OS:
+Step 1. Run
 
 <CodeGroup>
 
-```bash npm
-npm install render9
+```bash curl
+curl -X POST https://api.render9.com/api/otp  -H 'Content-Type: application/json'  -d '{ phoneNumber: <PHONE_NUMBER>, countryCode:  <COUNTRY_CODE>,otp:  <OTP> , apiKey: <RENDER9_API_KEY>}'
 ```
-
-```bash yarn
-yarn add render9
-```
-
 </CodeGroup>
+ 
 
-Step 2. Add RENDER9_API_KEY to environment variable:
-
-```bash
-RENDER9_API_KEY
+```bash Response
+{ error: false, // true if there was an error, false otherwise message: 'OTP sent successfully' // message indicating the status}
 ```
 
-Step 3. import  sendOTP from render9:
-
-```bash
-import { sendOTP } from 'render9'
-```
-
-Step 4. Use sendOTP method to send otp :
-
-```bash
-sendOTP({ phoneNumber: <PHONE_NUMBER>, otp: <OTP> ,countryCode:<COUNTRY_CODE> , apiKey:<RENDER9_API_KEY> })
-```
+</Accordion>
 
 
-<h6>Node js</h6>
-<Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
-</Info>
-
-Step 1. Install Render9 on your OS:
-
-<CodeGroup>
-
-```bash npm
-npm install render9
-```
-
-```bash yarn
-yarn add render9
-```
-
-</CodeGroup>
-
-Step 2. Add RENDER9_API_KEY to environment variable:
-
-```bash
-RENDER9_API_KEY
-```
-
-Step 3. import  sendOTP from render9:
-
-```bash
-import { sendOTP } from 'render9'
-```
-
-Step 4. Use sendOTP method to send otp :
-
-```bash
-sendOTP({ phoneNumber: <PHONE_NUMBER>, otp: <OTP> ,countryCode:<COUNTRY_CODE> , apiKey:<RENDER9_API_KEY> })
-```
