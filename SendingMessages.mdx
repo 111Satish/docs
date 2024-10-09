@@ -1,10 +1,12 @@
 ---
 title: 'Sending Messages'
-description: 'Learn how to send messages using the Render9 SDK
-
-Render9 SDK provides a simple and easy to use classes architecture to send messages. You can send message of following types using the Render9 SDK:'
+description: 'Learn how to send messages using the Render9 SDK'
 ---
+<p>Render9 SDK provides a simple and easy to use classes architecture to send messages. You can send message of following types using the Render9 SDK:</p>
 
+<h5>Send a message</h5>
+<p> You can send a message to a user using the send method available on the client class message manager.</p>
+<h6>Node js</h6>
 <Info>
   **Prerequisite** You should have installed Node.js (version 18.10.0 or
   higher).
@@ -24,10 +26,22 @@ yarn add render9
 
 </CodeGroup>
 
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
+Step 2. Add RENDER9_API_KEY to environment variable:
 
 ```bash
-mintlify dev
+RENDER9_API_KEY
+```
+
+Step 3. import  sendOTP from render9:
+
+```bash
+import { sendOTP } from 'render9'
+```
+
+Step 4. Use sendOTP method to send otp :
+
+```bash
+sendOTP({ phoneNumber: <PHONE_NUMBER>, otp: <OTP> ,countryCode:<COUNTRY_CODE> , apiKey:<RENDER9_API_KEY> })
 ```
 
 The documentation website is now available at `http://localhost:3000`.
