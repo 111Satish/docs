@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Render9",
   "logo": {
-    "dark": "/logo/gowa_logo.png",
-    "light": "/logo/gowa_logo.png"
+    "dark": "/logo/gowa_logo1.svg",
+    "light": "/logo/gowa_logo1.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
